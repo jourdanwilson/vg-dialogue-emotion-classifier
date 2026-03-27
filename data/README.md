@@ -1,4 +1,4 @@
-# Dossier `data/` — Données brutes, intermédiaires et nettoyées
+# Dossier data — Données brutes, intermédiaires et nettoyées
 
 Ce dossier contient l’ensemble des fichiers de données utilisés dans le projet de classification des émotions dans les dialogues de jeux vidéo.
 
