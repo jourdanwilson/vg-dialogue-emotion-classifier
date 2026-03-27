@@ -1,16 +1,20 @@
 import pandas as pd
 
+# chargement du fichier csv contenant les dialogues nettoyés
 df = pd.read_csv("dialogues_clean.csv")
 
-# remove duplicates
+# suppression des doublons éventuels dans le dataset
 df = df.drop_duplicates()
 
-# remove very short lines (optional but recommended)
+# suppression des lignes trop courtes (moins de 3 mots)
+# cette étape permet d'éliminer les fragments non informatifs
 df = df[df.dialogue.str.split().str.len() >= 3]
 
-# strip spaces
+# suppression des espaces inutiles en début et fin de ligne
 df.dialogue = df.dialogue.str.strip()
 
-df.to_csv("dialogues_clean-new.csv", index=False)
+# sauvegarde du fichier nettoyé sous un nouveau nom
+df.to_csv("dialogues_clean.csv", index=False)
 
+# affichage du nombre de lignes restantes après nettoyage
 print(len(df), "lines remaining")
