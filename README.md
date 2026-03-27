@@ -61,9 +61,12 @@ Nous avons combiné deux scripts complémentaires en un seul pipeline d’extrac
 - Supprimer les espaces inutiles
 - Exporter vers `dialogues_clean.csv`
 
+  generatioon emotion
+  https://huggingface.co/j-hartmann/emotion-english-distilroberta-base
+
 ## Modèle
 
-Le classificateur prédit l’une des sept émotions à l’aide de :
+Le classificateur prédit l’une des sept émotions à l’aide de 
 
 - Tokenisation (WordPiece / BPE ou embeddings simples)
 - Une architecture de réseau de neurones (LSTM, GRU, CNN ou Transformer selon l’implémentation)
