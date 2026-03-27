@@ -1,4 +1,4 @@
-# DOssier Preprocessing — Pipeline d’extraction et de nettoyage des dialogues
+# Dossier Preprocessing — Pipeline d’extraction et de nettoyage des dialogues
 
 Ce dossier contient les scripts responsables de l’extraction, du nettoyage et de la préparation des dialogues utilisés pour l’entraînement du classificateur d’émotions.
 
