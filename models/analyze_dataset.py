@@ -9,11 +9,9 @@ on peut lancer le script avec :
 """
 
 # importation des bibliothèques nécessaires :
-# - argparse : gestion des arguments en ligne de commande
-# - os : manipulation de chemins et dossiers
-# - pandas : lecture et manipulation de données tabulaires
-# - matplotlib : génération de graphiques
-# - collections.counter : comptage rapide d'éléments
+# argparse gestion des arguments en ligne de commande
+# os manipulation de chemins et dossiers
+# collections.counter comptage rapide d'éléments
 import argparse
 import os
 import pandas as pd
