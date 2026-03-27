@@ -1,4 +1,4 @@
-# Dossier `annotation/` — Annotations humaines et évaluation du modèle
+# Dossier annotation — Annotations humaines et évaluation du modèle
 
 Ce dossier contient les fichiers liés à l’annotation manuelle des émotions et à l’évaluation des performances du modèle de classification.
 
