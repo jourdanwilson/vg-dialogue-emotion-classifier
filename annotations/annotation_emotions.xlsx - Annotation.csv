@@ -1,0 +1,76 @@
+#,Dialogue,Prédiction modèle,Confiance,Annot. Annotateur 1,Annot. Annotateur 2,Accord modèle / A1
+1,"Contenders, please return to your waiting room.",Neutre,71%,Neutre,Neutre,✅ Accord
+2,"Hah! I doubt that. Have it your way, however, off you go.",Joie,95%,Colère,Colère,❌ Désaccord
+3,Is this a dream...?,Colère,74%,Peur,Peur,❌ Désaccord
+4,Brejik is nothing but a punk!,Colère,64%,Colère,Colère,✅ Accord
+5,Just recently the Sith were given harsh diplomatic penalties for these actions. Now you are trying to recruit me.,Neutre,64%,Dégoût,Dégoût,❌ Désaccord
+6,"If this elf never returned, how do you know the Wardens' cure worked?",Neutre,78%,Neutre,Neutre,✅ Accord
+7,He's really a prince.,Neutre,64%,Neutre,Surprise,✅ Accord
+8,Pleased?! You're jealous! You're jealous of my power!,Tristesse,79%,Colère,Colère,❌ Désaccord
+9,We are slaves here to the People of Sand.,Surprise,94%,Dégoût,Tristesse,❌ Désaccord
+10,"Emergency alert! Reports of a suspicious character found! Those not on detail, search the ship. Report when found! I repeat. Suspicious character found on board! Those not on detail, search the ship. Report when found!",Joie,71%,Peur,Peur,❌ Désaccord
+11,"Well, he ain't exactly chopped liver",Colère,62%,Neutre,Neutre,❌ Désaccord
+12,"Wow, you could be Leene's twin!",Surprise,99%,Surprise,Surprise,✅ Accord
+13,The Sith will want to cut off our escape. We'll stay here and protect the ships so we can get out of here once you stop Bastila!,Joie,76%,Peur,Peur,❌ Désaccord
+14,"Come now, high dragons are exceedingly rare",Colère,56%,Neutre,Neutre,❌ Désaccord
+15,"The Manaan authorities may not have the proof to proceed with official diplomatic sanctions against the Republic, but we Selkath know who is to blame.",Neutre,54%,Colère,Colère,❌ Désaccord
+16,Aren't you Kanji Tatsumi? What are you doing here?,Dégoût,57%,Surprise,Surprise,❌ Désaccord
+17,Why don't you try asking Tifa?,Colère,81%,Neutre,Neutre,❌ Désaccord
+18,"He will lower you to the Shadowlands,",Neutre,89%,Neutre,Neutre,✅ Accord
+19,"We used to haul everything to Taris, and the Sith would take it off our hands there. Not sure where we'll be bringing it now.",Neutre,72%,Neutre,Neutre,✅ Accord
+20,You didn't look so good out there on that last race. Desert sun getting to you?,Joie,55%,Neutre,Neutre,❌ Désaccord
+21,It isn't safe out there on the streets. Those Black Vulkars will take a shot at anybody!,Neutre,70%,Colère,Neutre,❌ Désaccord
+22,Shut it down! Shut everything down! They're in the system!,Neutre,99%,Peur,Peur,❌ Désaccord
+23,"Kain... Return to me, my pawn... Deliver me the Crystal...",Peur,77%,Peur,Peur,✅ Accord
+24,"In a small colony like this, everyone knows everyone's business.",Colère,98%,Dégoût,Tristesse,❌ Désaccord
+25,"Adel was careless. She may be a sorceress, but after all, she was human. We succeeded... But... we couldn't keep such a dangerous sorceress around as a trophy. We had to do something... So...we decided to send her far, far away... Some place very far... Into outer space...",Neutre,92%,Neutre,Neutre,✅ Accord
+26,"Hi, Tyvark. I've got to stock up - they might be sending me to the front to battle the Sith.",Peur,53%,Neutre,Neutre,❌ Désaccord
+27,There's supposed to be some crazy Sith hermit that keeps kidnapping students in these hills. Best be careful.,Tristesse,86%,Peur,Peur,❌ Désaccord
+28,Just leave me alone. I have to get in the academy!,Tristesse,84%,Colère,Peur,❌ Désaccord
+29,You remind me of him.,Neutre,77%,Neutre,Colère,✅ Accord
+30,Welcome to the heart and soul of Wall Market—the Honeybee Inn. Is there a honeyboy or girl whose company you desire?,Neutre,65%,Neutre,Neutre,✅ Accord
+31,I discovered the new world ...,Neutre,82%,Neutre,Neutre,✅ Accord
+32,"If them Sith found a Star Map in those ruins, nobody's ever mentioned it.",Neutre,57%,Neutre,Neutre,✅ Accord
+33,Don't bother me. You're on your own here.,Dégoût,72%,Neutre,Neutre,❌ Désaccord
+34,"It's probably just hunter-tales, though. No one could live in the Shadowlands",Neutre,73%,Neutre,Colère,✅ Accord
+35,"Well, that, and they threatened to destroy the only natural source of kolto on the planet if anyone tries to attack them.",Surprise,97%,Neutre,Neutre,❌ Désaccord
+36,And the day started so peacefully.,Dégoût,93%,Neutre,Neutre,❌ Désaccord
+37,... then you're softer than they say.,Neutre,64%,Neutre,Tristesse,✅ Accord
+38,"Not at all, but Sandal isn't really my son.",Neutre,76%,Neutre,Dégoût,✅ Accord
+39,Stop that at once!,Neutre,60%,Colère,Neutre,❌ Désaccord
+40,"Ho ho ho. Well, we are high up in the mountains",Dégoût,95%,Neutre,Colère,❌ Désaccord
+41,Princess Sara! You're safe!,Neutre,93%,Joie,Surprise,❌ Désaccord
+42,His friends Woorwill and Jaarak will want to know.,Joie,66%,Neutre,Joie,❌ Désaccord
+43,"Please, just leave me alone.",Colère,82%,Neutre,Neutre,❌ Désaccord
+44,Have you heard what happened to Taris?,Peur,81%,Surprise,Tristesse,❌ Désaccord
+45,A few of the Sith trooper uniforms have gone missing.,Tristesse,59%,Neutre,Peur,❌ Désaccord
+46,"I... I'm trying to prove my worth to enter the Sith academy, here.",Colère,88%,Colère,Peur,✅ Accord
+47,"If you want to enter the garage, you need authorization from Mr. Anoleis. No exceptions. Sorry.",Tristesse,77%,Neutre,Neutre,❌ Désaccord
+48,"I'm taking over the Bone Pit, effective now!",Colère,89%,Colère,Colère,✅ Accord
+49,"And they'll keep on coming at you, as long as you continue to wield the Keyblade.",Neutre,77%,Neutre,Neutre,✅ Accord
+50,"You're... you're joking, right? The smug Hutt-spawn push us every chance they can get and enjoy it.",Surprise,52%,Colère,Colère,❌ Désaccord
+51,Apologies are not sufficient. The law must be upheld.,Surprise,67%,Colère,Colère,❌ Désaccord
+52,"Yeah, he got chomped instead!",Colère,53%,Surprise,Surprise,❌ Désaccord
+53,I have to stop talking to Sith... they make me want to break,Colère,96%,Colère,Colère,✅ Accord
+54,Check out those Twi'lek dancers.,Neutre,93%,Neutre,Joie,✅ Accord
+55,You taint yourself with your words. You are a friend to us.,Neutre,91%,Neutre,Neutre,✅ Accord
+56,"They were getting upset, see, that there was no use for them anymore... so they summoned",Neutre,66%,Neutre,Neutre,✅ Accord
+57,Careful now... that growl sounded pretty threatening. Keep your slave on its leash,Colère,55%,Peur,Peur,❌ Désaccord
+58,"We are threatened everyday. You are just another body in the army we face from all sides, at all times.",Neutre,93%,Colère,Colère,❌ Désaccord
+59,I find it shocking that a hero of the Republic - Sunry - could do such a thing. Perhaps I have been wrong in my judgment of the Republic.,Colère,97%,Surprise,Surprise,❌ Désaccord
+60,"We'll be back, Suvam!",Surprise,56%,Joie,Joie,❌ Désaccord
+61,A burst-transmission SOS reported they were being overrun by enemy forces. No word since. All personnel presumed dead.,Neutre,75%,Neutre,Neutre,✅ Accord
+62,Such negotiations are worked out between intergalactic governments and the Ahto City Export Authority.,Neutre,55%,Neutre,Neutre,✅ Accord
+63,"I see. We can only hope for the best, then.",Dégoût,88%,Neutre,Dégoût,❌ Désaccord
+64,We've no choice... We must do what we've been avoiding...,Neutre,88%,Neutre,Dégoût,✅ Accord
+65,You have done us a great help by removing the Elders from our way. Now we can at last gain entrance to the Temple.,Neutre,58%,Joie,Joie,❌ Désaccord
+66,Grow some gills and swim the planet yourself. There's no substitute for personal experience.,Neutre,74%,Neutre,Neutre,✅ Accord
+67,"Well, people complain, but things under the Sith really aren't so bad.",Colère,78%,Neutre,Neutre,❌ Désaccord
+68,"Maybe so, but this one more than most, I think.",Joie,64%,Neutre,Peur,❌ Désaccord
+69,"I have far more pressing matters than any questions you might have, off-worlder.",Peur,93%,Dégoût,Colère,❌ Désaccord
+70,"Yes, sir, but not as many as we'd hoped.",Colère,72%,Tristesse,Tristesse,❌ Désaccord
+71,That's what I thought. Who's this Garden Master anyway?,Colère,62%,Colère,Colère,✅ Accord
+72,"Still, that little fella's some miracle. Imagine... Mr. Geppetto's wooden puppet, brought to life by the Blue Fairy.",Neutre,77%,Surprise,Surprise,❌ Désaccord
+73,That Pinocchio - he must have his poor father worried sick.,Neutre,86%,Tristesse,Tristesse,❌ Désaccord
+74,"You are either brave or foolish, off-worlder, to walk our streets so boldly.",Peur,61%,Colère,Colère,❌ Désaccord
+75,Nothing. Just thinking.,Neutre,67%,Neutre,Neutre,✅ Accord
