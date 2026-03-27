@@ -160,7 +160,8 @@ preprocessing/  scripts d’extraction et de nettoyage
 models/         modèle de classification et scripts d’analyse  
 annotation/     annotations humaines et métriques d’évaluation  
 figures/        visualisations des résultats
-rapport
+Rapport RNN
+Rapport Web
 ```
 ---
 
