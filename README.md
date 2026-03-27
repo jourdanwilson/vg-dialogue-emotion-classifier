@@ -27,7 +27,7 @@ Le projet comprend :
 - une analyse quantitative et qualitative des performances
 - une interface web permettant de tester le modèle en temps réel
 
-Ce travail a été réalisé dans le cadre du cours de **Réseaux de Neurones**.
+Ce travail a été réalisé dans le cadre du cours de Réseaux de Neurones et Interfaces Web.
 
 ---
 
@@ -140,6 +140,8 @@ Cette étape permet d’identifier les limites du modèle, notamment une tendanc
 ---
 
 ## Interface web
+
+Le projet comprend une interface web interactive développée avec Gradio, qui permet aux utilisateurs d'analyser les émotions présentes dans les dialogues des jeux vidéo. L'interface offre à la fois une prédiction de texte unique et une analyse par lots à partir de fichiers CSV, affichant les émotions prédites, les scores de confiance et des visualisations de la répartition émotionnelle.
 
 Une interface interactive permettant :
 
