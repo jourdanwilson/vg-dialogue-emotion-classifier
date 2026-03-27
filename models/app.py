@@ -56,9 +56,7 @@ EXEMPLES = [
 ]
 
 
-# ---------------------------------------------------------------------------
 # prédiction d'un dialogue unique
-# ---------------------------------------------------------------------------
 
 def predict_single(text: str):
     """appelée par l'onglet 'dialogue unique'."""
@@ -115,7 +113,6 @@ def predict_single(text: str):
     return label, fig
 
 
-# ---------------------------------------------------------------------------
 # analyse d'un fichier csv complet
 
 def analyze_csv(file):
@@ -203,7 +200,6 @@ def analyze_csv(file):
     return summary_md, fig, preview
 
 
-# ---------------------------------------------------------------------------
 # construction de l'interface gradio
 
 with gr.Blocks(
