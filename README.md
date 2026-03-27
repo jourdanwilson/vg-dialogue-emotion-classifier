@@ -1,10 +1,15 @@
-# 🎮 Classificateur d’émotions dans les dialogues de jeux vidéo
-Un modèle de réseau de neurones pour la classification des émotions dans les dialogues de RPG
+# Classificateur d’émotions dans les dialogues de jeux vidéo
+
+Modèle de réseau de neurones pour la classification automatique des émotions dans les dialogues de RPG.
+
+---
 
 ## Présentation
-Ce projet porte sur la classification des émotions dans les dialogues de jeux vidéo à l’aide de réseaux de neurones.
 
-Nous entraînons un classificateur supervisé capable de prédire l’une des sept émotions de base d’Ekman :
+Ce projet propose un système de classification automatique des émotions dans des dialogues issus de jeux vidéo, en particulier des RPG.  
+L’objectif est d’identifier l’émotion dominante exprimée dans une réplique de personnage à l’aide de méthodes de traitement automatique du langage (NLP) et de réseaux de neurones.
+
+Le modèle prédit l’une des sept émotions fondamentales définies par Ekman :
 
 - Joie
 - Tristesse
@@ -16,93 +21,153 @@ Nous entraînons un classificateur supervisé capable de prédire l’une des se
 
 Le projet comprend :
 
-- Un pipeline de prétraitement personnalisé pour extraire et nettoyer les dialogues à partir de scripts bruts de jeux vidéo
-- Un corpus construit à partir de plusieurs jeux de la série *Final Fantasy*
-- Un classificateur neuronal entraîné sur le corpus nettoyé
-- Une étape d’annotation humaine pour évaluer les performances du modèle
-- (Optionnel) une API web et une interface pour des prédictions en temps réel
+- un pipeline de prétraitement permettant d’extraire et nettoyer des dialogues à partir de scripts bruts
+- la constitution d’un corpus à partir de plusieurs jeux de la série *Final Fantasy*
+- l’utilisation d’un modèle Transformer pré-entraîné pour la classification d’émotions
+- une étape d’annotation humaine pour évaluer la qualité des prédictions
+- une analyse quantitative et qualitative des performances
+- (optionnel) une interface web permettant de tester le modèle en temps réel
 
-Ce travail a été réalisé dans le cadre du cours de Réseaux de Neurones.
+Ce travail a été réalisé dans le cadre du cours de **Réseaux de Neurones**.
 
 ---
 
 ## Jeu de données
 
-Notre jeu de données est dérivé du dépôt **VideoGameDialogueCorpusPublic** :
+Le corpus est construit à partir du dépôt :
 
+VideoGameDialogueCorpusPublic  
 https://github.com/seannyD/VideoGameDialogueCorpusPublic
 
-Nous avons utilisé des dialogues extraits de sous-ensembles de scripts.
+Nous avons sélectionné et extrait des lignes de dialogue provenant de plusieurs scripts de la série *Final Fantasy*.
 
+Seules les répliques de personnages ont été conservées.  
+Les métadonnées, descriptions narratives et identifiants techniques ont été supprimés afin d’obtenir un corpus linguistique exploitable pour l’apprentissage automatique.
 
-## Objectifs
+---
 
-- Collecter et préparer un corpus de dialogues de jeux vidéo
-- Générer ou attribuer des étiquettes d’émotion aux dialogues
-- Entraîner un modèle de classification des émotions
-- Évaluer les performances du modèle
+## Objectifs du projet
 
+- constituer un corpus propre de dialogues de jeux vidéo
+- associer une étiquette d’émotion à chaque dialogue
+- entraîner un modèle de classification d’émotions
+- comparer les prédictions du modèle avec des annotations humaines
+- analyser les biais éventuels du modèle
+- explorer une application concrète du NLP dans le domaine du jeu vidéo
+
+---
 
 ## Pipeline de prétraitement
 
-Nous avons combiné deux scripts complémentaires en un seul pipeline d’extraction et de nettoyage :
+Le corpus est obtenu grâce à un pipeline en deux étapes :
 
-### 1. Extraction à partir de scripts `.txt` bruts
+### 1. Extraction des dialogues
 
-- Extraire les lignes de dialogue entre guillemets
-- Supprimer les métadonnées (`SYSTEM`, `CHOICE`, `ACTION`, etc.)
-- Filtrer les titres, identifiants et textes qui ne correspondent pas à du dialogue
-- Supprimer les doublons tout en conservant l’ordre original
+Extraction automatique des lignes de dialogue à partir de fichiers texte bruts :
+
+- identification des segments entre guillemets
+- suppression des balises et métadonnées (`SYSTEM`, `ACTION`, `CHOICE`, etc.)
+- filtrage des titres, identifiants et contenus non dialogués
+- suppression des doublons en conservant l’ordre d’apparition
 
 ### 2. Nettoyage et normalisation
 
-- Supprimer à nouveau les doublons (étape de sécurité)
-- Supprimer les lignes contenant moins de 3 mots
-- Supprimer les espaces inutiles
-- Exporter vers `dialogues_clean.csv`
+Nettoyage linguistique du corpus :
 
-  generatioon emotion
-  https://huggingface.co/j-hartmann/emotion-english-distilroberta-base
+- suppression des doublons restants
+- suppression des lignes contenant moins de 3 mots
+- normalisation des espaces
+- export du corpus final vers `dialogues_clean.csv`
+
+Le résultat est un jeu de données cohérent et exploitable pour l’entraînement du modèle.
+
+---
 
 ## Modèle
 
-Le classificateur prédit l’une des sept émotions à l’aide de 
+La classification des émotions est réalisée à l’aide d’un modèle Transformer pré-entraîné :
 
-- Tokenisation (WordPiece / BPE ou embeddings simples)
-- Une architecture de réseau de neurones (LSTM, GRU, CNN ou Transformer selon l’implémentation)
-- Une couche de sortie Softmax sur 7 classes
+https://huggingface.co/j-hartmann/emotion-english-distilroberta-base
 
-L’évaluation comprend :
+Caractéristiques :
 
-- Accuracy (exactitude)
+- tokenisation automatique du texte
+- représentation contextuelle des phrases
+- classification probabiliste via une couche Softmax
+- prédiction parmi 7 catégories émotionnelles
+
+Pour chaque dialogue, le modèle produit :
+
+- l’émotion prédite
+- un score de confiance
+- la distribution de probabilité sur l’ensemble des émotions
+
+---
+
+## Évaluation
+
+Les performances du modèle sont évaluées à l’aide de plusieurs indicateurs :
+
+- accuracy
 - F1-score
-- Matrice de confusion
-- Accord entre annotations humaines et prédictions du modèle
+- matrice de confusion
+- analyse de la distribution des émotions
+- score de confiance moyen
+- comparaison avec annotations humaines
 
+Des visualisations permettent d’analyser :
+
+- la répartition des émotions dans le corpus
+- la confiance du modèle selon chaque émotion
+- les dialogues les plus représentatifs de chaque catégorie
+
+---
 
 ## Annotation humaine
 
-Afin de valider le modèle, nous avons annoté manuellement un sous-ensemble de **75 lignes de dialogue** :
+Un sous-ensemble de 75 dialogues a été annoté manuellement afin d’évaluer la qualité des prédictions.
 
-- Deux annotateurs humains (A1, A2)
-- Prédictions du modèle
-- Accord inter-annotateurs
-- Accord entre le modèle et les annotateurs humains
+Le protocole comprend :
 
-Cette étape a permis d’identifier certains biais systématiques (par exemple, une tendance à sur-prédire la classe neutre).
+- deux annotateurs humains indépendants
+- comparaison des annotations humaines entre elles
+- comparaison entre annotations humaines et prédictions du modèle
 
+Mesures analysées :
 
-## Extension : API web et interface
+- accord inter-annotateurs
+- accord modèle / humain
+- confiance moyenne du modèle
 
-Un membre de l’équipe a étendu le projet avec :
+Cette étape permet d’identifier les limites du modèle, notamment une tendance à sur-prédire la classe *neutre*.
 
-- Une API REST permettant d’utiliser le modèle entraîné
-- Une interface web pour la prédiction d’émotions en temps réel
+---
 
-Cette extension illustre une application pratique du modèle au-delà du cadre du projet académique.
+## Extension : interface web
 
+Une extension du projet propose une interface interactive permettant :
+
+- d’entrer un dialogue libre
+- d’obtenir l’émotion prédite
+- de visualiser les probabilités associées à chaque émotion
+- d’analyser un fichier complet de dialogues
+
+Cette interface illustre une application concrète du modèle en dehors du cadre académique.
+
+---
+
+## Structure du projet
+
+```text
+data/           corpus brut et nettoyé  
+preprocessing/  scripts d’extraction et de nettoyage  
+models/         modèle de classification et scripts d’analyse  
+annotation/     annotations humaines et métriques d’évaluation  
+figures/        visualisations des résultats
+```
+---
 
 ## Auteurs
 
-- Mickaëla Mastrodicasa
-- Jourdan Wilson
+Mickaëla Mastrodicasa  
+Jourdan Wilson
