@@ -7,7 +7,6 @@ Modèle de réseau de neurones pour la classification automatique des émotions 
 ## Présentation
 
 Ce projet propose un système de classification automatique des émotions dans des dialogues issus de jeux vidéo, en particulier des RPG.  
-L’objectif est d’identifier l’émotion dominante exprimée dans une réplique de personnage à l’aide de méthodes de traitement automatique du langage (NLP) et de réseaux de neurones.
 
 Le modèle prédit l’une des sept émotions fondamentales définies par Ekman :
 
@@ -26,7 +25,7 @@ Le projet comprend :
 - l’utilisation d’un modèle Transformer pré-entraîné pour la classification d’émotions
 - une étape d’annotation humaine pour évaluer la qualité des prédictions
 - une analyse quantitative et qualitative des performances
-- (optionnel) une interface web permettant de tester le modèle en temps réel
+- une interface web permettant de tester le modèle en temps réel
 
 Ce travail a été réalisé dans le cadre du cours de **Réseaux de Neurones**.
 
@@ -39,8 +38,6 @@ Le corpus est construit à partir du dépôt :
 VideoGameDialogueCorpusPublic  
 https://github.com/seannyD/VideoGameDialogueCorpusPublic
 
-Nous avons sélectionné et extrait des lignes de dialogue provenant de plusieurs scripts de la série *Final Fantasy*.
-
 Seules les répliques de personnages ont été conservées.  
 Les métadonnées, descriptions narratives et identifiants techniques ont été supprimés afin d’obtenir un corpus linguistique exploitable pour l’apprentissage automatique.
 
@@ -50,7 +47,6 @@ Les métadonnées, descriptions narratives et identifiants techniques ont été 
 
 - constituer un corpus propre de dialogues de jeux vidéo
 - associer une étiquette d’émotion à chaque dialogue
-- entraîner un modèle de classification d’émotions
 - comparer les prédictions du modèle avec des annotations humaines
 - analyser les biais éventuels du modèle
 - explorer une application concrète du NLP dans le domaine du jeu vidéo
@@ -143,16 +139,14 @@ Cette étape permet d’identifier les limites du modèle, notamment une tendanc
 
 ---
 
-## Extension : interface web
+## Interface web
 
-Une extension du projet propose une interface interactive permettant :
+Une interface interactive permettant :
 
 - d’entrer un dialogue libre
 - d’obtenir l’émotion prédite
 - de visualiser les probabilités associées à chaque émotion
 - d’analyser un fichier complet de dialogues
-
-Cette interface illustre une application concrète du modèle en dehors du cadre académique.
 
 ---
 
