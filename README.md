@@ -1,4 +1,4 @@
-# Classificateur d’émotions dans les dialogues de jeux vidéo
+#  🎮 Classificateur d’émotions dans les dialogues de jeux vidéo
 
 Modèle de réseau de neurones pour la classification automatique des émotions dans les dialogues de RPG.
 
