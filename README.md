@@ -168,6 +168,51 @@ rapport
 ```
 ---
 
+## Liste des jeux utilisés et explorés
+
+Dans le cadre de ce projet, plusieurs jeux vidéo ont été mobilisés 
+
+### 1. Jeux issus du corpus général
+
+Cette  liste regroupe les jeux mentionnés ou explorés au cours du projet
+
+- Super Mario RPG  
+- Star Wars: Knights of the Old Republic  
+- Phoenix Wright: Ace Attorney  
+- Chrono Trigger  
+- Dragon Age II  
+- Dragon Age: Origins  
+- The Elder Scrolls V: Skyrim  
+- Hades  
+- Horizon Zero Dawn  
+- The Secret of Monkey Island  
+- Persona 3  
+- Persona 4  
+- Persona 5  
+- Mass Effect  
+- Mass Effect 2  
+- Mass Effect 3  
+- Kingdom Hearts  
+- Kingdom Hearts II  
+- Kingdom Hearts III  
+- Kingdom Hearts Birth by Sleep  
+- Kingdom Hearts Dream Drop Distance  
+- King’s Quest II  
+- King’s Quest III  
+- King’s Quest IV  
+- King’s Quest V  
+- King’s Quest VI  
+- Final Fantasy II  
+- Final Fantasy III  
+- Final Fantasy IV  
+- Final Fantasy V  
+- Final Fantasy VI  
+- Final Fantasy VII  
+- Final Fantasy VIII  
+- Final Fantasy X
+
+---
+
 ## Auteurs
 
 Mickaëla Mastrodicasa  
