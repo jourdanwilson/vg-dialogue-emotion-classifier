@@ -1,4 +1,4 @@
-# Dossier `models/` — Modèle de classification des émotions
+# Dossier models 
 
 Ce dossier contient les scripts liés au modèle de classification des émotions appliqué aux dialogues de jeux vidéo.
 
@@ -26,7 +26,7 @@ models/
 ├── analyze_dataset.py     # script d’analyse statistique du dataset
 ├── app.py                 # interface web pour tester le modèle
 └── README.md              # documentation du dossier
-
+```
 ---
 
 ## Description des scripts
